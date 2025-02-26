@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: ;
+        }
+
+        nav {
+            width: 100vw;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 0 10px grey;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-bottom: -5px;
+            /* position-relative; */
+            z-index: 10;
+        }
+
+        .navbrdr {
+            border-right: 1px solid rgb(199, 191, 191);
+        }
+
+        .input-group {
+            width: 300px;
+            height: 40px;
+            /* margin-left:-20px; */
+        }
+
+        .left {
+            margin-left: -40px;
+        }
+
+        .search {
+            width: 300px;
+            height: 50px;
+        }
+
+        .right {
+            font-size: 19px;
+            margin-left: 100px;
+        }
+
+        .right p {
+            font-size: 15px;
+        }
+
+        .w {
+            height: 43px;
+
+        }
+
+        .w2 {
+            margin-bottom: -3px;
+            height: 20px;
+            padding-top: 15px;
+
+
+
+        }
+
+        .help {
+            margin-bottom: -12px;
+        }
+
+        .left-1 {
+            width: 19vw;
+            height: 100px;
+
+
+        }
+
+        .middle-1 {
+            width: 40vw;
+            height: 100vh;
+
+
+
+
+        }
+
+        .right-1 {
+            width: 19vw;
+            height: 300vh;
+
+
+        }
+
+        .me {
+            width: 32px;
+            min-height: 26px;
+            /* margin-bottom:10p */
+
+            margin-top: 5px;
+
+
+        }
+
+        .me1 {
+            border-radius: 50%;
+        }
+
+        .iii {
+            margin-left: 8px;
+            margin-bottom: 5px;
+        }
+
+        body {
+            background-color: rgba(235, 220, 213, 0.897);
+        }
+
+        .sec-1 {
+            margin-top: 50px;
+            min-height: 100vh;
+            padding: 30px;
+            position: relative;
+            z-index: 2;
+
+        }
+
+        .leftone {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+
+        }
+
+        .img1 {
+            width: 100%;
+        }
+
+        .img2 {
+            min-width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-left: 18px;
+            position: relative;
+            bottom: 30px;
+            border: 3px solid white;
+
+        }
+
+        .leftonepara {
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: 17px;
+
+            /* margin-top:-30px; */
+        }
+
+        .leftonepara2 {
+            font-size: 15px;
+            margin-top: -12px;
+            padding-left: 17px;
+
+        }
+
+        .heading {
+            margin-top: -30px;
+            padding-left: 17px;
+
+        }
+
+        .lefttwo {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+        }
+
+        .lefttwo.two {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+        }
+
+        .build {
+            margin-right: 30px;
+        }
+
+        .lefttwo table {
+            margin: 18px;
+            padding: 20px;
+            text-align: left;
+
+        }
+
+        .lefttwo td {
+
+            text-align: right;
+            padding: 5px;
+
+        }
+
+        .lefttwo th {
+
+            width: 60%;
+
+        }
+
+        .leftthree {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+        }
+
+
+        .groupsp {
+            margin-left: -7.5px;
+        }
+
+        .middleone {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+
+        }
+
+        .middletwo {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+        }
+
+
+        .middlethree {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+
+        }
+
+        .rightone {
+            width: 100%;
+            height:auto;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+
+
+        }
+
+        .how {
+            font-size: 12px;
+            text-align: left;
+            padding-left: 15px;
+            border-radius: 5px;
+            margin-bottom: -7px;
+        }
+
+        .how:hover {
+            background-color: rgb(203, 196, 196);
+            transition: 0.4s;
+        }
+
+        .gapss {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: -5px;
+        }
+
+        .gapssp2 {
+            font-size: 13px;
+        }
+
+        .righttwonrml {
+            margin-top: 4px;
+        }
+
+        .itag {
+            margin-left: 70px;
+        }
+
+        .pad {
+            margin-bottom: -5px;
+        }
+
+        .pad:hover {
+            background-color: rgb(215, 216, 218);
+        }
+
+        .righttwo {
+            width: 100%;
+            min-height: 250px;
+            background-color: white;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid rgb(221, 220, 220);
+            position: sticky;
+            top: 60px;
+
+        }
+
+        .bghit {
+
+            width: 100%;
+
+        }
+
+        .logo {
+            width: 80px;
+
+            position: relative;
+            bottom: 50px;
+            left: 20px;
+            border: 2px solid white;
+        }
+
+        .name {
+            margin-top: 10px;
+            font-size: 25px;
+            font-weight: 500;
+            margin-left: 15px;
+            position: relative;
+            bottom: 60px;
+        }
+
+        .about {
+            margin-left: 15px;
+            position: relative;
+            bottom: 60px;
+            font-size: 15px;
+        }
+
+        .info {
+            margin-left: 15px;
+            position: relative;
+            bottom: 60px;
+            font-size: 14px;
+        }
+
+        .btn {
+            margin-left: 20px;
+            position: relative;
+            bottom: 60px;
+            font-size: 15px;
+            width: 80%;
+            border-radius: 10px;
+
+            color: #879199;
+            cursor: pointer;
+        }
+
+        .form-control {
+            width: 33vw;
+            padding: 10px;
+            border-radius: 25px;
+            margin-left: 8px;
+            border: 1px solid rgba(158, 153, 153, 0.86);
+
+        }
+        .m1{
+            margin-bottom: 20px;
+        }
+        .me12{
+            height:40px;
+            margin-top: 20px;
+            border-radius: 50%;
+            /* padding-left:10px; */
+            margin-left:8px;
+            margin-right: 8px;
+        }
+        .btn1{
+            width:510px;
+            border-radius: 40px;
+            padding:8px;
+            font-size: 15px;
+            margin-top:20px;
+            text-align: start;
+            /* margin-bottom: -20px; */
+            background-color:transparent;
+            border: 1.5px solid grey;
+        }
+        .opt{
+            font-size: 25px;
+             margin-top:-15px; 
+        }
+        .opt1{
+            font-size: 15px;
+        }
+        .middleoneimage {
+            border-radius: 50%;
+            width: 45px;
+            margin-left: 20px;
+        }
+
+        .medias {
+            margin-top: -40px;
+        }
+
+        .set {
+            font-size: 23px;
+            padding-bottom: 15px;
+            margin-right: 8px;
+
+        }
+
+        .medias2 {
+            /* margin-left: -50px; */
+        }
+
+        .datta {
+            width: 50px;
+            height: 55px;
+            border-radius: 50%;
+            margin-left: 8px;
+            /* margin-bottom:x; */
+            margin-top: -10px;
+        }
+
+        .datta2 {
+            margin-top: 10px;
+            margin-bottom: -5px;
+            font-weight: 500;
+        }
+
+        .datta2fs {
+            font-size: 13px;
+            color: #879199;
+            margin-top: px;
+            margin-left: 5px;
+        }
+
+        .datta3fs {
+            margin-top: -15px;
+        }
+
+        .middtwopara {
+            text-align: left;
+            padding-left: 10px;
+            margin-bottom: -5px;
+        }
+
+        .middtwopara2 {
+            text-align: left;
+            margin-left: 10px;
+
+        }
+
+        .ggl {
+            width: 100%;
+            margin-bottom: 5px;
+            border-bottom: 1px solid rgb(199, 193, 193);
+        }
+
+        .botton {
+            margin-left: 300px;
+            padding-top: 55px;
+
+
+        }
+
+        .brdr {
+            width: 550px;
+            border-bottom: 1px solid rgb(184, 179, 179);
+            margin-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .gglcln2 {
+            margin-top: 5px;
+
+        }
+
+
+        @media(max-width:1100px) {
+            .right-1 {
+                display: none;
+            }
+            .sec-1{
+                width:75%;
+                margin-left:-5px;
+            }
+            .btn1{
+                width:400px;
+            }
+            .left-1 {
+                width: 30vw;
+            }
+            .btn2{
+                width:300px;
+                
+            }
+
+
+            .input-group {
+                display: none
+            }
+
+            .right {
+                font-size: 19px;
+                margin-left: -200px;
+                padding-right: 30px;
+            }
+
+            .me {
+                margin-top: 5px;
+                border-end: none;
+            }
+
+            .help1 {
+                display: none;
+                ;
+            }
+
+            .med {
+                display: none;
+
+
+            }
+
+            .leftone {
+                height: 270px;
+                width:auto;
+                font-size: 10px;
+            }
+
+            .lefttwo {
+                height: 160px;
+                text-align: center;
+                display: none
+            }
+
+            .lefttwo.two {
+                height: 120px;
+                text-align: center;
+            }
+
+            .leftthree {
+                height: auto;
+            }
+
+            .middleone {
+                min-width: 60vw
+            }
+
+            .middletwo {
+                width: 60vw;
+                min-height: 550px;
+            }
+
+            .middlethree {
+                width: 60vw;
+                min-height: 740px;
+            }
+
+            .form-control {
+                width: 50vw;
+                padding: 10px;
+                border-radius: 25px;
+                margin-left: 5px;
+                border: 1px solid rgba(158, 153, 153, 0.86);
+
+
+            }
+
+            .set {
+                font-size: 23px;
+                margin-bottom: -5px;
+                padding-left: 50px;
+
+
+            }
+
+            .medias {
+                margin-top: -45px;
+                margin-left: 20px;
+            }
+
+            .set2 {
+                font-size: 25px;
+                margin-bottom: 25px;
+            }
+
+           
+
+            .botton {
+                /* padding-left: 10px; */
+                /* padding-top: 50px; */
+                margin-left: 200px;
+                display:none;
+            }
+
+            .brdr {
+                width: 600px;
+
+                border-bottom: 1px solid rgb(184, 179, 179);
+                margin-left: 25px;
+                margin-bottom: 10px;
+            }
+
+            .ggl {
+                margin-bottom: 5px;
+            }
+
+            .gglcln2 {
+                margin-top: 8px;
+
+            }
+
+            .navbrdr {
+                border: none;
+            }
+
+            .right {
+                font-size: 19px;
+                margin-left: -350px;
+            }
+
+            .linkedin {
+                /* margin-left:100px; */
+                display: none
+            }
+
+            .medias {
+                padding-left: 10px;
+            }
+
+            .middle-1 {
+                margin-left: 50px;
+            }
+
+        }
+        @media(max-width:930px)
+        {
+            
+            .leftone {
+                height: auto;
+                width:auto;
+                font-size:10px;
+            }
+
+            .lefttwo {
+                height:auto;
+                text-align: center;
+                display: none
+            }
+
+            .lefttwo.two {
+                height: auto;
+                text-align: center;
+            }
+
+            .leftthree {
+                height: auto;
+            }
+        }
+
+        @media(max-width:680px) {
+            .sec-1{
+                width:50%;
+                margin-left: -15px;
+            }
+            .right-1 {
+                display: none;
+            }
+
+            .left-1 {
+                display: none;
+            }
+
+            .form-control {
+                width: 75vw;
+                padding: 10px;
+                border-radius: 25px;
+                margin-left: 5px;
+                border: 1px solid rgba(158, 153, 153, 0.86);
+
+
+            }
+            .btn1{
+                width:400px;
+            }
+
+            .middleone {
+                min-width: 90vw;
+            }
+
+            .middletwo {
+                width: 90vw;
+                height: 600px;
+            }
+
+            .middlethree {
+                width: 90vw;
+                height: 830px;
+            }
+
+            .right {
+                font-size: 19px;
+                margin-left: -320px;
+            }
+
+            .navbrdr {
+                border: none;
+            }
+
+            .brdr {
+                width: 550px;
+
+                border-bottom: 1px solid rgb(184, 179, 179);
+                margin-left: 45px;
+                margin-bottom: 10px;
+            }
+
+            .botton {
+                /* padding-left: 10px; */
+                /* padding-top: 50px; */
+                margin-left: 280px;
+            }
+
+            .botton {
+                display: none;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="d-flex justify-content-around align-items-center  gap-4 py-3">
+        <div class="left d-flex justify-content-center align-items-center ">
+            <img src="logo.png" class="linkedin" alt="" width="35px">
+            <div class="search px-3 py-1">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search">
+                </div>
+            </div>
+        </div>
+        <div class="right d-flex justify-content-center align-items-center p-5">
+            <div
+                class=" help w d-flex justify-content-center align-items-center flex-column  border-bottom border-black border-2 px-3  mt-1">
+                <i class="fa-solid fa-house-chimney pt-1 "></i>
+                <p>Home</p>
+            </div>
+            <div class=" help  d-flex flex-column justify-content-center align-items-center px-3 py-1 "> <i
+                    class="fa-solid fa-user-group  pt-2" style="color: #878787;"></i>
+                <p>Network</p>
+            </div>
+            <div class=" help  d-flex flex-column justify-content-center align-items-center px-3 "> <i
+                    class="fa-solid fa-briefcase pt-2" style="color: #878787;"></i>
+                <p>Jobs</p>
+            </div>
+            <div class=" help  d-flex flex-column justify-content-center align-items-center px-3 py-1"><i
+                    class="fa-solid fa-comment pt-2" style="color: #878787;"></i>
+                <p>Messaging</p>
+            </div>
+            <div class=" help   d-flex flex-column justify-content-center align-items-center px-3 ">
+                <i class="fa-solid fa-bell pt-2" style="color: #878787;"></i>
+                <p>Notifications</p>
+            </div>
+            <div class=" w2 d-flex flex-column justify-content-center align-items-center px-3 py-4 mb-3 pt-5 navbrdr">
+                <div class="me">
+                    <img src="liimg.png " class="me1" width="28px" height="28px">
+                </div>
+                <p>Me <i class=" help1 fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class=" help med d-flex flex-column justify-content-center align-items-center px-3 mt-1 py-1">
+                <img src="dots.webp" class="med" width="24px">
+                <p class="med">For Bussiness <i class=" help1 fa-solid fa-caret-down"></i></p>
+            </div>
+            <div class="help   med d-flex flex-column justify-content-center align-items-center px-3 mt-1 py-1">
+                <img class="med " src="premium.png" width="25px">
+                <p class="med"> Try Premium for 0$</p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- section-1 -->
+    <div class="container-fluid  sec-1 d-flex justify-content-center align-items-start gap-3">
+        <div class="left-1">
+            <div class="leftone">
+                <img class=" img1" src="bg.png">
+                <img class="img2" src="liimg.png">
+
+                <h4 class="heading">
+                    Rupa Samala
+                </h4>
+                <p class="leftonepara ">
+                    Attended Sreenidhi Institute of
+                    Science and Technology</p>
+                <p class="leftonepara2">Hyderabad, Telangana, India
+                </p>
+
+            </div>
+            <div class="lefttwo">
+                <div>
+                    <table>
+                        <tr>
+                            <th>Profile Viewers </th>
+                            <td> 30</td>
+                        </tr>
+                        <tr>
+                            <th>Post Impressions </th>
+                            <td> 818</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="lefttwo two d-flex justify-content-center align-items-center flex-column ">
+                <div class="mt-2">
+                    <p>Build better client relationships</p>
+                </div>
+                <div class="build mb-2">
+                    <img src="premium.png" class="" width="25px">
+                    <b class="">Try sales Nav for 0$</b>
+                </div>
+
+            </div>
+            <div class="leftthree d-flex justify-content-around  align-items-start flex-column pt-2">
+                <div class="d-flex justify-content-around align-items-start gap-3  mt-2 pt-2 px-4">
+                    <i class="fa-solid fa-bookmark fs-5 pt-1"></i>
+                    <p class=>Saved items</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-start gap-3  mt-1 px-4">
+                    <i class="fa-solid fa-people-group fs-5 pt-1 groupsp"></i>
+                    <p class="">Groups</p>
+                </div>
+                <div class="d-flex justify-content-center align-items-start gap-3 px-4">
+                    <i class="fa-solid fa-calendar-week fs-5"></i>
+                    <p class="">Events</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle-1  flex-column ">
+            <div class="middleone d-flex flex-column">
+                <div class="m1 d-flex justify-content-space-around align-items-center">
+                    <img src="liimg.png" class="me12"alt="">
+                    <button type="submit" class="btn1">Start a post</button>
+                </div>
+                <div class="opt d-flex justify-content-around align-items-center py-2">
+                  <div class="d-flex justify-content-center align-items-center gap-2">
+                    <p><i class="fa-solid fa-image" style="color:blue;"></i></p>
+                    <p class="opt1 d-none d-lg-flex d-md-flex d-sm-flex">Media</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center gap-2">
+                    <p><i class="fa-regular fa-calendar" style="color:rgb(219, 185, 48)"></i></p>
+                    <p class="opt1 d-none d-lg-flex d-md-flex d-sm-flex">Events</p>
+                  </div>
+                  <div class="d-flex justify-content-center align-items-center gap-2">
+                    <p><i class="fa-solid fa-newspaper" style="color:rgb(255, 123, 0)"></i></p>
+                    <p class="d-none opt1 d-lg-flex d-md-flex d-sm-flex">Write article</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="middletwo">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="post1.png " class="datta">
+                    <div class="d-flex justify-content-start align-items-start flex-column  ">
+                        <p class="px-2 datta2">Datta Sai Sandela</p>
+                        <p class=" ps-1 datta2fs">Student at Sreenidhi Institute of Science and Technology</p>
+                        <p class="text-secondary datta2fs datta3fs">2d. <i class="fa-solid fa-earth-americas"></i></p>
+                    </div>
+                </div>
+                <p class="middtwopara">🚀 Building My Own Google Search Page with HTML & CSS! 🚀</p>
+                <p class="middtwopara2"> Excited to showcase a project where I recreated a Google-like search page using
+                    HTML & CSS! 🎨💻
+                    …more</p>
+
+                <img class=" ggl" src="gglclone.png">
+                <div class="brdr d-flex justify-content-start align-items-start">
+                    <img src="like.png" width="27px">
+                    <p>You and 33 others</p>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center gglcln2">
+                    <div class="d-flex">
+
+                        <i class="fa-regular fa-thumbs-up fs-4 px-2" style="color: #5d9ed0;"></i>
+                        <p class="text-info">Like</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-comment-dots fs-4 px-2"></i>
+                        <p class="">Comments</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-clock-rotate-left fs-4 px-2 "></i>
+                        <p class="">repost</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-paper-plane fs-4 px-2"></i>
+                        <p class="">Send</p>
+                    </div>
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-chart-simple text-secondary botton2 "></i>
+                    <p class="text-left botton2 mb-5">Impressions</p> -->
+                    <button class="btn btn-link text-info botton "> View Analytics</button>
+                </div>
+            </div>
+            <div class="middlethree">
+                <div class="d-flex justify-content-start align-items-center">
+                    <img src="hr.png" class="datta">
+                    <div class="d-flex justify-content-start align-items-start flex-column  ">
+                        <p class="px-2 datta2">HackerRank</p>
+                        <p class=" ps-1 datta2fs">1,738,911 followers</p>
+                        <p class="text-secondary datta2fs datta3fs">1d. <i class="fa-solid fa-earth-americas"></i></p>
+                    </div>
+                </div>
+                <p class="middtwopara">Happy Wednesday everyone! 💻</p>
+                <p class="middtwopara2">
+                    …more</p>
+
+                <img class=" ggl" src="hrpost.png" width="400px">
+                <div class="brdr d-flex justify-content-start align-items-start">
+                    <img src="like.png" width="27px">
+                    <p class=>You and 1,728,11 others
+                    </p>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center gglcln2">
+                    <div class="d-flex">
+
+                        <i class="fa-regular fa-thumbs-up fs-4 px-2" style="color: #5d9ed0;"></i>
+                        <p class="text-info">Like</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-comment-dots fs-4 px-2"></i>
+                        <p class="">Comments</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-clock-rotate-left fs-4 px-2 "></i>
+                        <p class="">repost</p>
+                    </div>
+                    <div class="d-flex">
+
+                        <i class="fa-solid fa-paper-plane fs-4 px-2"></i>
+                        <p class="">Send</p>
+                    </div>
+                </div>
+                <div>
+                    <!-- <i class="fa-solid fa-chart-simple text-secondary botton2 "></i>
+                    <p class="text-left botton2 mb-5">Impressions</p> -->
+                    <button class="btn btn-link text-info botton "> View Analytics</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="right-1">
+            <div class="rightone">
+                <div class="m-2">
+                    <h5 class="m-2 text-left px-1">
+                        Trending Now
+                    </h5>
+                    <p class="text-secondary fw-4 text-left px-2 ">
+                        curated by LinkedIn News
+                    </p>
+                </div>
+
+                <div class="how">
+                    <h6> Large layoff hit Starbucks</h6>
+                    <p class="text-secondary">4h ago.52,703 readers</p>
+                </div>
+                <div class="how">
+                    <h6>High profit GCCs on the rise</h6>
+                    <p class="text-secondary">10h ago.2,236 readers</p>
+                </div>
+                <div class="how">
+                    <h6>VC firms eye agentic AI startups</h6>
+                    <p class="text-secondary">10h ago.1,528 readers</p>
+                </div>
+                <div class="how">
+                    <h6>Indian firm embrace DEI efforts</h6>
+                    <p class="text-secondary">11h ago.882 readers</p>
+                </div>
+                <div class="how">
+                    <h6>Gold loans shine brighter</h6>
+                    <p class="text-secondary">11h ago.575 readers</p>
+                </div>
+                <h6 class="px-3 mb-2">Show more <i class="fa-solid fa-caret-down"></i></h6>
+                <h5 class="text-secondary px-3">Today's puzzles</h5>
+                <div class="d-flex justify-content-start align-items-start pad ">
+                    <img src="tango.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
+                    <div class="d-flex justify-content-start align-items-start flex-column px-1">
+                        <p class=" gapss">Tango</p>
+                        <p class="gapssp2">Harmonize the grid</p>
+                    </div>
+                    <i class=" itag fa-solid fa-caret-right fs-2"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start pad ">
+                    <img src="queens.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
+                    <div class="d-flex justify-content-start align-items-start flex-column px-1">
+                        <p class=" gapss">Queens</p>
+                        <p class="gapssp2">Crown each region</p>
+                    </div>
+                    <i class=" itag fa-solid fa-caret-right fs-2"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start pad ">
+                    <img src="pinpoint.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
+                    <div class="d-flex justify-content-start align-items-start flex-column px-1">
+                        <p class=" gapss">Pinpoint</p>
+                        <p class="gapssp2">Guess the category</p>
+                    </div>
+                    <i class=" itag fa-solid fa-caret-right fs-2"></i>
+                </div>
+                <div class="d-flex justify-content-start align-items-start pad ">
+                    <img src="crossclimb.png" class="px-1 mx-2 righttwonrml " width="33px" height="33px">
+                    <div class="d-flex justify-content-start align-items-start flex-column px-1">
+                        <p class=" gapss">Crossclimb</p>
+                        <p class="gapssp2">Unlock trivia ladder</p>
+                    </div>
+                    <i class=" itag fa-solid fa-caret-right fs-2"></i>
+                </div>
+
+
+
+            </div>
+            <div class="righttwo">
+
+                <img src="bghitachi.png" class="bghit" alt="">
+                <img src="hitachi.jpg" class="logo" alt="">
+                <h1 class="name">Hitachi</h1>
+                <h6 class="about">Hitachi Social Innovatio is POWERING GOOD</h6>
+
+                <p class="info">Stay upadated on green-tech & decarbonisation for sustainable future.</p>
+                <button class="btn btn-outline-info">Follow</button>
+
+
+
+
+            </div>
+            <div class="rightthree"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
